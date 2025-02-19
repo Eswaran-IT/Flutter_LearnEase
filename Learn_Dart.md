@@ -16,7 +16,7 @@
     - A **rich standard library** for everyday tasks
 
 
-### 1️⃣ Entry Point (`main()` function) 🏁
+### 1️. Entry Point (`main()` function) 🏁
 - **Definition**: The `main()` function is where the Dart program starts.
 - **Example**:
 
@@ -27,7 +27,7 @@ void main() {
 
 ```
 
-### 2️⃣ Variables and Data Types 💡
+### 2️. Variables and Data Types 💡
 
 - **Definition**:  
   Variables store data. Dart supports the following types:
@@ -40,7 +40,7 @@ void main() {
 
 ---
 
-#### 1. **Integer (`int`)**
+#### 1️⃣ **Integer (`int`)**
 
 - **Create**: Declare and assign an integer value.
 - **Read**: Access the value.
@@ -234,4 +234,21 @@ final dateTime = DateTime.now();  // Create
 print(dateTime);  // Read
 
 // dateTime = DateTime.now();  // This would throw an error because 'dateTime' is final.
+```
+### 1️⃣2️⃣ Set (`Set`)
+- **Definition**: A collection of unique items. A `Set` does not allow duplicate values and is unordered.
+- **Example**:
+
+```dart
+Set<int> numbers = {1, 2, 3, 4};  // Create
+print(numbers);  // Read
+
+numbers.add(5);  // Add an element
+print(numbers);
+
+numbers.add(3);  // Try to add a duplicate (won't work)
+print(numbers);
+
+numbers.remove(2);  // Delete an element
+print(numbers);
 ```
